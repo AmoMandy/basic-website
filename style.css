@@ -1,0 +1,43 @@
+body {
+    background-color: #FEC3A6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Intro {
+   
+}
+
+
+.Which_City {
+    
+}
+
+
+.Foreign_Language {
+   
+}
+
+.Favourite_subjects {
+    
+}
+
+
+.Historical_Places {
+   
+}
+
+@media (min-width: 760px) {
+
+    /* body {
+         background-color: #5befa5; 
+    }*/
+ }
+ 
+ @media (min-width: 960px) {
+ 
+    /* body {
+         background-color: #B47EB3; 
+      } */
+     
+ 
+ }
