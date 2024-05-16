@@ -6,6 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic_website</title>
     <link rel="stylesheet" href="simple-grid.css">
+    <style>
+        body {
+            background-color: #FEC3A6;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .Intro {
+            background-image: url('cape.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0.5em;
+            border-radius: 1em;
+
+            img {
+                margin-top: 0.5em;
+                padding-left: 70%;
+                border-bottom: 1em;
+            }
+        }
+
+
+        .table {
+            width: 80%;
+            margin-bottom: 20px;
+            border-collapse: #FF928B;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3em;
+            text-align: justify;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* @media (max-width:960px) {
+            .class to br added {
+                float: right !important;
+            }
+        } */
+    </style>
 </head>
 
 
@@ -13,13 +57,13 @@
     <div class="container">
         <h1>Amanda Gambu</h1>
         <div class="row">
-            <div class="">
+            <div class="Intro">
                 <img src="mypicture.png" width="200">
             </div>
 
             <div class="row">
                 <h2>The City I want to visit</h2>
-                <img src="cape.png" width="200">
+                <div style="float: left;"><img src="cape.png" width="200"></div>
                 <div>I want to visit Cape Town because of their breathtaking natural beauty centered around Table
                     Mountain.
                     World-class food and wine.
@@ -39,34 +83,34 @@
                 <h2>Foreign Language</h2>
                 <div>The language I will like to learn is french because it is a top international language, spoken by
                     millions worldwide.</div>
-                <table border=" 1">
-                <tr>
-                    <th>French Phrase</th>
-                    <th>English Phrase</th>
-                </tr>
-                <tr>
-                    <td>Bonjour</td>
-                    <td>Good morning</td>
-                </tr>
-                <tr>
-                    <td>De rien</td>
-                    <td>You are welcome</td>
-                </tr>
-                <tr>
-                    <td>Tu es belle</td>
-                    <td>You are Beautiful</td>
-                </tr>
-                <tr>
-                    <td>Ravi de vous rencontre</td>
-                    <td>Nice to meet you</td>
-                </tr>
+                <table border=" 1" class="table">
+                    <tr>
+                        <th>French Phrase</th>
+                        <th>English Phrase</th>
+                    </tr>
+                    <tr>
+                        <td>Bonjour</td>
+                        <td>Good morning</td>
+                    </tr>
+                    <tr>
+                        <td>De rien</td>
+                        <td>You are welcome</td>
+                    </tr>
+                    <tr>
+                        <td>Tu es belle</td>
+                        <td>You are Beautiful</td>
+                    </tr>
+                    <tr>
+                        <td>Ravi de vous rencontre</td>
+                        <td>Nice to meet you</td>
+                    </tr>
                 </table>
 
 
             </div>
 
             <h2>My Favourite subjects</h2>
-            I competed Financial Accounting at Damelin college doing Bcom Accounting,Taxation and Auditing.
+            I competed Financial Accounting,Taxation and Auditing at Damelin college doing Bcom Accounting.
             <div class="row">
                 <div class="col-4">
                     <h4>Financial Accounting</h4>
@@ -74,7 +118,8 @@
                 </div>
                 <div class="col-4">
                     <h4>Taxation</h4>
-                    <img src="tax.png" width="200">
+                    <img src="https://www.investopedia.com/thmb/cHigOcnY9JPQ4CjU4oshzsrEVm4=/2152x1393/filters:fill(auto,1)/GettyImages-1190995919-bce27cedc8fa4274b70ffcd0062e6098.jpg"
+                        width="200">
                 </div>
                 <div class="col-4">
                     <h4>Auditing</h4>
@@ -84,42 +129,44 @@
 
             <h2>Historical Places</h2>
             <div class="row">
+                <!-- class = col-6-sm font-light on <p> -->
                 <div class="col-4">
-                    <img src="picture.png" width="200">
-                    <h4>Interesting Facts</h4>
-                    <div>1.Immersive Exhibits and Narrative: The Apartheid Museum offers visitors a highly immersive
+                    <div style="float: right;"><img src="picture.png" width="150"></div>
+                    <h4>Apartheid Museum</h4>
+                    <p>Immersive Exhibits and Narrative: The Apartheid Museum offers visitors a highly immersive
                         and
                         thought-provoking experience through its exhibits and narrative. The museum presents the
                         history
                         of
                         apartheid chronologically, from its roots in colonialism to its eventual dismantling and the
                         dawn of
-                        democracy in South Africa.</div>
+                        democracy in South Africa.</p>
                 </div>
-            
+
                 <div class="col-4">
-                    <img src="pic.png" width="200">
-                    <h4>Interesting Facts</h4>
-                    <div>1.Historical Significance: The Market Theatre holds immense historical significance as it
+                    <!-- class = col-6-sm font-light mid-text on <p> -->
+                    <div style="float: right;"><img src="pic.png" width="150"></div>
+                    <h4>Martket Theartre</h4>
+                    <p>Historical Significance: The Market Theatre holds immense historical significance as it
                         emerged
                         during the apartheid era in South Africa. Established in 1976 by Mannie Manim and Barney Simon,
                         it
                         provided a platform for artists of all races to showcase their work, challenging the racial
-                        segregation policies of the time. </div>
-            
+                        segregation policies of the time. </p>
+
                 </div>
                 <div class="col-4">
-                    <img src="mypic.png" width="200">
-                    <h4>Interesting Facts</h4>
-                    <div>1.Conservation Efforts: Many lion parks play a crucial role in lion conservation efforts. With
+                    <div style="float: right;"><img src="mypic.png" width="150"></div>
+                    <h4>Lion Park</h4>
+                    <p>Conservation Efforts: Many lion parks play a crucial role in lion conservation efforts. With
                         lion
                         populations declining due to habitat loss, human-wildlife conflict, and poaching, lion parks
                         often
-                        serve as sanctuaries or breeding centers for these animals. </div>
+                        serve as sanctuaries or breeding centers for these animals. </p>
                 </div>
             </div>
-            </div>
-            </div>
+        </div>
+    </div>
 </body>
 
 </html>

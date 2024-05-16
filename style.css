@@ -1,110 +1,169 @@
 body {
-    background-color: #FEC3A6;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #FEC3A6;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .Intro {
 
-    /* padding: 1em;
+  /* padding: 1em;
      margin: 1em;
      margin-bottom: 0.5em;*/
-     background-image: url('cape.png');
-     background-repeat: no-repeat;
-     background-size: cover;
-     margin: 0.5em;
-     img{
-        margin-top: 0.5em;
-        padding-left: 70%;
-        border-radius: 1em;
-        border-bottom: 1em;
-      }
+  background-image: url('cape.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0.5em;
+  border-radius: 1em;
+
+  img {
+    margin-top: 0.5em;
+    padding-left: 70%;
+    border-bottom: 1em;
+  }
 }
 
 
 .Which_City {
-    padding: 1em;
-    margin: 1em;
-    margin-bottom: 0.5em;
+  padding: 1em;
+  margin: 1em;
+  margin-bottom: 0.5em;
 }
+
 .para0 {
-    width: 30em;
-    display: inline-block;
-    font-size: large;
-  }
+  width: 30em;
+  display: inline-block;
+  font-size: large;
+}
 
 .Foreign_Language {
-     padding: 1em;
-     margin: 1em;
-     margin-bottom: 0.5em;
+  padding: 1em;
+  margin: 1em;
+  margin-bottom: 0.5em;
 }
 
 .Favourite_subjects {
-    padding: 1em;
-    margin: 1em;
-    margin-bottom: 0.5em;
-    
-}
+  padding: 1em;
+  margin: 1em;
+  margin-bottom: 0.5em;
 
-.hist2 {
-    padding: 1em;
-     margin: 1em;
-     margin-bottom: 0.5em;
 }
 
 .Historical_Places {
-     padding: 1em;
-     margin: 1em;
-     margin-bottom: 0.5em;
+  padding: 1em;
+  margin: 1em;
+  margin-bottom: 0.5em;
+}
+
+.Historical {
+  /* padding: 1em; 
+    margin: 1em;
+    margin-bottom: 0.5em; */
+  float: left;
+  width: 25%;
+  padding: 5px;
 }
 
 .table {
-    border: 1px solid;
-    text-align: justify;
-    width: 70%;
-    border-collapse: #FF928B;
-    padding: 8px;
-        margin-left: auto;
-        margin-right: auto;
-margin-top: 3em;
+  text-align: justify;
+  width: 70%;
+  border-collapse: #FF928B;
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
 }
 
 @media (min-width: 600px) {
-    .Historical_Places {
-      display: flex;
-      width: 90%;
-      margin: 0.5em; 
-    }
-  }
-  .hist1{
-    align-items: center;
-    margin: 20px;
+  .Historical_Places {
+    display: flex;
+    width: 90%;
+    margin: 0.5em;
   }
 
-  .hist2 {
+  .hipp {
     display: flex;
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+}
+
+.hist1 {
+  align-items: center;
+  margin: 20px;
+}
+
+.hist2 {
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+  .hist2 {
+    display: grid;
     margin-top: 20px;
   }
 
-  .hp{
-    text-align: center;
-  }
+}
 
-  @media screen and (max-width: 620px) {
-    
-    .Intro,
-    .Which_City,
-    .para0,
-    .Foreign_Language,
-    .Favourite_subjects,
-    .Historical_Places
-    table
-    
-     {
-      flex-direction: column;
-    }
+.hp {
+  text-align: center;
+}
+
+.hipp {
+  text-align: justify;
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+@media screen and (max-width: 620px) {
+
+  .Intro,
+  .Which_City,
+  .para0,
+  .Foreign_Language,
+  .Favourite_subjects,
+  .Historical_Places .table {
+    flex-direction: column;
   }
-  @media (min-width: 600px){
+}
+
+/* @media (min-width: 600px){
     .citypic{
       object-fit: cover;
     }
+  }*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.container div {
+  text-align: center;
+}
+
+.container img {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
+
+  .container img {
+    width: 70%;
+  }
+}
+
+ @media (max-midth: 960px) {
+  .subbies {
+    order: 1;
+  }
+  /* .Historical_Places {
+    display: block;
+  } */
+}  
